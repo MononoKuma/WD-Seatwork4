@@ -4,23 +4,22 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
-  </a>
+ <a href="https://app.daily.dev/mononokuma">
+   <img src="https://api.daily.dev/devcards/v2/DMEySfkP0murZQ6MrL1WW.png?type=wide&r=rgz" width="652" alt="Aries's Dev Card"/>
+ </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Feature Page</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  A project designed to challenge us to create two different styles of feature pages. It aims to test our knowledge of and skills that we have learned from past projects. Each page will consist of many features that are made with CSS and javascript.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=MononoKuma/WD-Seatwork4)
 
 ---
 
@@ -57,20 +56,16 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Description of the project in detail.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+A collection of 3 pages 1st is the landing page which connects to the other 2 pages which contain different types of Feature pages. The feature pages test our skills from past projects to design and add features such as animations to its elements. To make those features we were instructed that we were allowed to use CSS and javascript for said features. 
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Animated Elements
+- javascript
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -95,16 +90,31 @@ WD-ProjectName
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ background.jpg
+|   |   └─ logo.png
+|   |   └─ wallpaper.jpg
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ page1
+|  |  └─ assets
+|  |  |  └─ css
+|  |  |  |  └─ style.css
+|  |  |  └─ img
+|  |  |  |  └─ background.png
+|  |  |  |  └─ mission.jpg
+|  |  |  |  └─ vision.jpg
+|  |  |  └─ js
+|  |  |     └─ script.js
+|  |  └─ index.html
+|  └─ page2
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  |  └─ background.png
+|     |  |  └─ mission.jpg
+|     |  |  └─ vision.jpg
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html
@@ -117,4 +127,9 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3Shools | HTML & CSS | https://www.w3schools.com |
+| GeeksforGeeks | HTML & CSS | https://www.geeksforgeeks.org |
+| Ian Ramirez | Template | https://github.com/zyx-0314 |
+| Daily Dev | Readme Icon | https://daily.dev/ |
+| Google | Images | https://google.com/ |
+| Getbootstrap | Icons | https://icons.getbootstrap.com |

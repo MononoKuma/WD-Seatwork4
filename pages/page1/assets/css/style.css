@@ -12,11 +12,16 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 97.3%;
+  height: calc(40px + 1rem);
   align-items: center;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header .logo img {
@@ -28,7 +33,7 @@ header .logo img {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-direction: row;
 }
 
@@ -38,11 +43,31 @@ header nav ul li a {
   flex-direction: row;
 }
 
+header .others {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+}
+
+header .others a {
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  align-self: center;
+}
+
 .hero {
   display: flex;
   align-content: center;
-  background-color: #000;
+  background-image: url("../img/background.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   color: #fff;
+  height: 100vh;
   padding: 40px 20px;
 }
 
@@ -52,8 +77,13 @@ header nav ul li a {
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin: 0;
+}
+
+h2 {
+  font-size: 2.4em;
+  color: #6a1b9a;
 }
 
 .hero-text p {
@@ -80,62 +110,58 @@ header nav ul li a {
   padding-left: 10vh;
 }
 
-.features {
-  display: flex;
-  justify-content: space-around;
-  background-color: #fff;
-  padding: 40px 20px;
-}
-
-.feature {
-  text-align: center;
-}
-
-.feature img {
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.testimonial {
+.aboutus {
   text-align: center;
   padding: 40px 20px;
   background-color: #f8f9fa;
 }
 
-.testimonial .logos {
+.aboutus .logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   margin-bottom: 20px;
   width: calcu(100vh - 20px);
   height: 100px;
 }
 
-.testimonial .quotes {
+.container {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
-.testimonial blockquote {
-  max-width: 400px;
+.card {
+  position: relative;
+  width: 45%;
 }
 
-.testimonial blockquote p {
-  font-size: 1em;
-}
-
-.testimonial blockquote cite {
+.card img {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-top: 10px;
-  font-style: normal;
-  color: #6c757d;
+  border-radius: 10px;
+  opacity: 0.79;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.card .text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .cta {
   text-align: center;
   padding: 40px 20px;
-  background-color: #007bff;
+  background-color: #6a1b9a;
   color: #fff;
 }
 
@@ -144,9 +170,108 @@ header nav ul li a {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #fff;
-  color: #007bff;
+  color: #6a1b9a;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.event-container {
+  width: 100vw;
+  margin: 20px;
+}
+
+.event {
+  position: relative;
+  width: 97vw;
+  height: 25vh;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.event .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.event .base {
+  opacity: 1;
+}
+
+.event:hover .base {
+  opacity: 0;
+}
+
+.event:hover .hover {
+  opacity: 1;
+}
+
+.event.active .base,
+.event.active .hover {
+  opacity: 0;
+}
+
+.event.active .click {
+  opacity: 1;
+}
+
+.event h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.event h1 span {
+  font-size: 16px;
+}
+
+.event p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+}
+
+.event button {
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center;
+}
+
+.divider {
+  height: 1px;
+  background-color: black;
+  width: 97vw;
+  margin: 10px 0;
 }
 
 footer {

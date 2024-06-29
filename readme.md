@@ -112,9 +112,11 @@ WD-ProjectName
 |     |  └─ css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ background.png
-|     |  |  └─ mission.jpg
-|     |  |  └─ vision.jpg
+|     |  |  └─ img1.png
+|     |  |  └─ img2.jpg
+|     |  |  └─ img3.jpg
+|     |  |  └─ img4.jpg
+|     |  |  └─ logo.jpg
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html

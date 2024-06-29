@@ -96,7 +96,7 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ page1
+|  └─ feature1
 |  |  └─ assets
 |  |  |  └─ css
 |  |  |  |  └─ style.css
@@ -107,7 +107,7 @@ WD-ProjectName
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
-|  └─ page2
+|  └─ feature2
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
@@ -117,6 +117,9 @@ WD-ProjectName
 |     |  |  └─ img3.jpg
 |     |  |  └─ img4.jpg
 |     |  |  └─ logo.jpg
+|     |  |  └─ background.png
+|     |  |  └─ mission.jpg
+|     |  |  └─ vision.jpg
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html

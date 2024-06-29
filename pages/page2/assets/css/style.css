@@ -67,30 +67,34 @@ header .others svg {
 .hero {
   display: flex;
   align-content: center;
-  background-color: #000;
-  color: white;
+  background-image: url("../img/background.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
   padding: 40px 20px;
 }
 
 .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex: 1;
+  gap: 5rem;
   padding: 5vh;
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 7em;
   margin: 0;
-}
-
-.hero-text p {
-  font-size: 1.2em;
 }
 
 .hero-text a {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 30px 50px;
+  background-color: #6a1b9a;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -110,17 +114,23 @@ header .others svg {
   display: flex;
   justify-content: space-around;
   background-color: white;
-  height: 20vh;
+  height: 80vh;
   padding: 40px 20px;
 }
 
 .feature {
   text-align: center;
+  padding: 40px 20px;
 }
 
 .feature img {
-  height: 50px;
+  height: 40vh;
   margin-bottom: 10px;
+  opacity: 0.79;
+}
+
+.feature img:hover {
+  opacity: 1;
 }
 
 .testimonial {
@@ -151,6 +161,7 @@ header .others svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .carousel .list .item .content {
@@ -166,20 +177,15 @@ header .others svg {
   text-shadow: 0 5px 10px #0004;
 }
 
-.carousel .list .item .author {
+.carousel .list .item h1 {
   font-weight: bold;
   letter-spacing: 10px;
 }
 
-.carousel .list .item .title,
-.carousel .list .item .topic {
+.carousel .list .item .title {
   font-size: 5em;
   font-weight: bold;
   line-height: 1.3em;
-}
-
-.carousel .list .item .topic {
-  color: rgb(195, 177, 225);
 }
 
 .carousel .list .item .buttons {
@@ -196,6 +202,7 @@ header .others svg {
   letter-spacing: 3px;
   font-family: Poppins;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .carousel .list .item .buttons button:nth-child(2) {
@@ -272,9 +279,8 @@ header .others svg {
   z-index: 1;
 }
 
-.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content h1,
 .carousel .list .item:nth-child(1) .content .title,
-.carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
 .carousel .list .item:nth-child(1) .content .buttons {
   transform: translateY(50px);
@@ -292,9 +298,7 @@ header .others svg {
 .carousel .list .item:nth-child(1) .content .title {
   animation-delay: 1.2s !important;
 }
-.carousel .list .item:nth-child(1) .content .topic {
-  animation-delay: 1.4s !important;
-}
+
 .carousel .list .item:nth-child(1) .content .des {
   animation-delay: 1.6s !important;
 }
@@ -396,9 +400,8 @@ header .others svg {
 .carousel.prev .arrows button {
   pointer-events: none;
 }
-.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content h1,
 .carousel.prev .list .item:nth-child(2) .content .title,
-.carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
   animation: contentOut 1.5s linear 1 forwards !important;
@@ -423,7 +426,7 @@ header .others svg {
 .cta {
   text-align: center;
   padding: 40px 20px;
-  background-color: #007bff;
+  background-color: #6a1b9a;
   color: white;
 }
 
@@ -432,7 +435,7 @@ header .others svg {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
-  color: #007bff;
+  color: #6a1b9a;
   text-decoration: none;
   border-radius: 5px;
 }
